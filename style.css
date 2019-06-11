@@ -1,43 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #222;
+}
+
+.main-container{
+	margin: 0 auto;
+}
+
+#form {
+	width: 100%;
+	max-width: 1080px;
+	height: 100%px;
+	color: #ddd;
+	margin: 10px auto;
+	text-align: center;
+	background-color: #222;
+	border: 1px solid yellowgreen;
+}
+
+#form h1{
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#form div{
+	display: inline-block;
+	width: 32%;
+	height: 100%;
+}
+
+#form div h2 {
+	margin: 10px 0;
+	color: #ddd;
+}
+
+#form  div p {
+	margin-bottom: 10px;
+	color: #ddd;
+}
+
+#form div input {
+	margin-bottom: 10px;
+	padding-left: 5px;
+	width: 180px;
+	height: 20px;
+	background-color: #222;
+	color: #ddd;
+	border: 1px solid yellowgreen;
+	line-height: 20px;
+}
+
+form input:focus{
+	outline: none;
+}
+
+#form .button-submit {
+	display: block;
+	margin: 50px auto 20px auto;
+	width: 100px;
+	height: 25px;
+	background-color: #222;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+	color: #ddd;
+	border: 1px solid yellowgreen;
+}
+
+#form .button-submit:hover {
+	color: #fff;
+}
+
+#profile-title {
+	width: 100%;
+	max-width: 1080px;
+	margin: 50px auto;
+	text-align: center;
+	background-color: gold;
+	display: none;
+}
+
+#profile-title p {
+	font-size: 40px;
+	color: #ddd;
+}
+
+.profile {
+	width: 100%;
+	max-width: 1080px;
+	margin: 10px auto;
+	display: none;
 }
 
 
-#form{
-    margin: 10px auto;
-    width: 250px;
-    border: 1px solid black;
-    text-align: center;
-    background-color: darkgray;
+.profile div {
+	display: inline-block;
+	color: #ddd;
 }
 
-#form h3{
-    margin: 10px 0;
+.profile #description {
+	float: left;
+	text-align: left;
+	width: 50%;
 }
 
-
-#form p{
-    margin-bottom: 5px;
+.profile #description p {
+	margin: 10px 0 10px 100px;
+	font-size: 16px;
 }
 
-#form input{
-    margin-bottom: 5px;
-    background-color: darkgray;
-    border: 1px solid black;
+.profile #info {
+	text-align: right;
+	width: 50%;
 }
 
-#form .button-submit{
-    margin: 10px auto;
-    width: 100px;
-    height: 25px;
-    color: darkgray;
-    background-color: black;
-    text-align: center;
-    line-height: 25px;
-    cursor: pointer;
-}
-
-#form .button-submit:hover{
-    color: #fff;
+.profile #info p {
+	margin: 10px 100px 10px 0;
+	font-size: 16px;;
 }

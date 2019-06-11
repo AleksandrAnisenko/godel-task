@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/livescript" src="script.js"></script>
 </head>
 <body>
+<div class="main-container">
 <div id="form">
-    <h1>
-        Анкета
-    </h1>
-    <form >
+	<h1>
+		Анкета
+	</h1>
+	<form>
 
-        <h3>
-           Общие данные
-        </h3>
-        <br>
-        <p>
-            Имя
-        </p>
-        <input class="in" type="text"/>
+		<div>
+			<h2>
+				Общие данные
+			</h2>
 
-        <p>
-            Фамилия
-        </p>
-        <input class="in" type="text"/>
-        <p>
-            Отчество
-        </p>
-        <input class="in" type="text"/>
-           <p>
-               Дата рождения
-           </p>
-            <input type="date"/>
-        <h3>
-            Образование
-        </h3>
-        <br>
-        <p>
-            Учреждение образования
-        </p>
-        <input type="text"/>
-        <p>
-            Факультет
-        </p>
-        <input type="text"/>
-        <p>
-            Специализация
-        </p>
-        <input type="text"/>
-        <p>
-            Год завершения
-        </p>
-        <input type="date"/>
-        <h3>
-            Контактная информация
-        </h3>
-        <br>
-        <p>
-            Телефон
-        </p>
-        <input type="tel"/>
-        <p>
-            Почта
-        </p>
-        <input type="email"/>
-        <p>
-            Скайп
-        </p>
-        <input type="text"/>
-        <p>
-            Телеграмм
-        </p>
-        <input type="text"/>
-        <div class="button-submit" onclick="submitForm()">Отправить</div>
-    </form>
+			<br>
+
+			<p>
+				Имя
+			</p>
+
+			<input class="input-general" type="text"/>
+
+			<p>
+				Фамилия
+			</p>
+
+			<input class="input-general" type="text"/>
+
+			<p>
+				Отчество
+			</p>
+
+			<input class="input-general" type="text"/>
+
+			<p>
+				Дата рождения
+			</p>
+
+			<input class="input-general" type="date"/>
+
+		</div>
+
+		<div>
+
+			<h2>
+				Образование
+			</h2>
+
+			<br>
+
+			<p>
+				Учреждение образования
+			</p>
+
+			<input class="input-education" type="text"/>
+
+			<p>
+				Факультет
+			</p>
+
+			<input class="input-education" type="text"/>
+
+			<p>
+				Специализация
+			</p>
+
+			<input class="input-education" type="text"/>
+
+			<p>
+				Год завершения
+			</p>
+
+			<input class="input-education" type="number"/>
+
+		</div>
+
+		<div>
+
+			<h2>
+				Контактная информация
+			</h2>
+
+			<br>
+
+			<p>
+				Телефон
+			</p>
+
+			<input class="input-contact" type="tel"/>
+
+			<p>
+				Почта
+			</p>
+
+			<input class="input-contact" type="email"/>
+
+			<p>
+				Скайп
+			</p>
+
+			<input class="input-contact" type="text"/>
+
+			<p>
+				Телеграмм
+			</p>
+
+			<input class="input-contact" type="text"/>
+
+		</div>
+
+	</form>
+		<div class="button-submit" onclick="submitForm()">Отправить</div>
+
 </div>
-<script type="text/livescript" src="script.js"></script>
+<div id="profile-title"></div>
+<div class="profile">
+	<div id="description"></div>
+	<div id="info"></div>
+</div>
+</div>
 </body>
 </html>
