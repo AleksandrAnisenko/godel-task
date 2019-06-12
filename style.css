@@ -2,11 +2,48 @@
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background-color: #222;
+}
+
+body{
+    background-color: #222;
 }
 
 .main-container{
 	margin: 0 auto;
+	text-align: center;
+}
+
+.main-container #profile-title{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	color: #ddd;
+}
+
+.example-2 .btn-tertiary{
+	color: #ddd;
+	padding:0;
+	line-height:40px;
+	width:300px;margin:auto;
+	display:block;
+	border:1px solid yellowgreen;
+	cursor: pointer;
+}
+
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{
+	color:#fff;
+	border-color: rgba(154, 205, 50, .8);
+}
+
+.example-2 .input-file {
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	z-index:-1;
+}
+
+#output{
+	max-width: 200px;
+	max-height: 200px;
 }
 
 #form {
@@ -17,12 +54,6 @@
 	margin: 10px auto;
 	text-align: center;
 	background-color: #222;
-	border: 1px solid yellowgreen;
-}
-
-#form h1{
-	margin-top: 20px;
-	margin-bottom: 50px;
 }
 
 #form div{
@@ -69,22 +100,9 @@ form input:focus{
 	border: 1px solid yellowgreen;
 }
 
-#form .button-submit:hover {
+#form .button-submit:hover, #download-button:hover, .print:hover {
 	color: #fff;
-}
-
-#profile-title {
-	width: 100%;
-	max-width: 1080px;
-	margin: 50px auto;
-	text-align: center;
-	background-color: gold;
-	display: none;
-}
-
-#profile-title p {
-	font-size: 40px;
-	color: #ddd;
+	background-color: rgba(154, 205, 50, .5);
 }
 
 .profile {
@@ -93,7 +111,6 @@ form input:focus{
 	margin: 10px auto;
 	display: none;
 }
-
 
 .profile div {
 	display: inline-block;
@@ -119,4 +136,43 @@ form input:focus{
 .profile #info p {
 	margin: 10px 100px 10px 0;
 	font-size: 16px;;
+}
+
+#download-button, .print{
+    cursor: pointer;
+    margin: 50px;
+    display: inline-block;
+	margin: 50px;
+	width: 100px;
+	height: 25px;
+	background-color: #222;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+	color: #ddd;
+	border: 1px solid yellowgreen;
+    text-decoration: none;
+}
+
+.buttons-container{
+    display: none;
+}
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .print, #download-button{
+    display: none;
+}
+    
+    .profile #description p{
+        margin-left: 20px;
+    }
+    
+    .profile #info p{
+        margin-right: 20px;
+    }
 }

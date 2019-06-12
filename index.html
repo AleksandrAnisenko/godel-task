@@ -8,122 +8,139 @@
 </head>
 <body>
 <div class="main-container">
-<div id="form">
-	<h1>
+	<h1 id="profile-title">
 		Анкета
 	</h1>
-	<form>
-
-		<div>
-			<h2>
-				Общие данные
-			</h2>
-
-			<br>
-
-			<p>
-				Имя
-			</p>
-
-			<input class="input-general" type="text"/>
-
-			<p>
-				Фамилия
-			</p>
-
-			<input class="input-general" type="text"/>
-
-			<p>
-				Отчество
-			</p>
-
-			<input class="input-general" type="text"/>
-
-			<p>
-				Дата рождения
-			</p>
-
-			<input class="input-general" type="date"/>
-
+	<!--Снизу готовый код взятый из интернета-->
+	<div class="example-2">
+		<div class="form-group">
+			<input type="file" name="file" id="file" class="input-file" onchange="loadFile(event)">
+			<label for="file" class="btn btn-tertiary js-labelFile">
+				<span class="js-fileName">ФОТО</span>
+			</label>
 		</div>
+	</div>
 
-		<div>
+				<img id="output"/>
 
-			<h2>
-				Образование
-			</h2>
 
-			<br>
+	<!--Сверху готовый код взятый из интернета-->
+	<div id="form">
+		<form>
 
-			<p>
-				Учреждение образования
-			</p>
+			<div>
+				<h2>
+					Общие данные
+				</h2>
 
-			<input class="input-education" type="text"/>
+				<br>
 
-			<p>
-				Факультет
-			</p>
+				<p>
+					Имя
+				</p>
 
-			<input class="input-education" type="text"/>
+				<input class="input" type="text"/>
 
-			<p>
-				Специализация
-			</p>
+				<p>
+					Фамилия
+				</p>
 
-			<input class="input-education" type="text"/>
+				<input class="input" type="text"/>
 
-			<p>
-				Год завершения
-			</p>
+				<p>
+					Отчество
+				</p>
 
-			<input class="input-education" type="number"/>
+				<input class="input" type="text"/>
 
-		</div>
+				<p>
+					Дата рождения
+				</p>
 
-		<div>
+				<input class="input" type="date"/>
 
-			<h2>
-				Контактная информация
-			</h2>
+			</div>
 
-			<br>
+			<div>
 
-			<p>
-				Телефон
-			</p>
+				<h2>
+					Образование
+				</h2>
 
-			<input class="input-contact" type="tel"/>
+				<br>
 
-			<p>
-				Почта
-			</p>
+				<p>
+					Учреждение образования
+				</p>
 
-			<input class="input-contact" type="email"/>
+				<input class="input" type="text"/>
 
-			<p>
-				Скайп
-			</p>
+				<p>
+					Факультет
+				</p>
 
-			<input class="input-contact" type="text"/>
+				<input class="input" type="text"/>
 
-			<p>
-				Телеграмм
-			</p>
+				<p>
+					Специализация
+				</p>
 
-			<input class="input-contact" type="text"/>
+				<input class="input" type="text"/>
 
-		</div>
+				<p>
+					Год завершения
+				</p>
 
-	</form>
-		<div class="button-submit" onclick="submitForm()">Отправить</div>
+				<input class="input" type="number"/>
 
-</div>
-<div id="profile-title"></div>
-<div class="profile">
-	<div id="description"></div>
-	<div id="info"></div>
-</div>
+			</div>
+
+			<div>
+
+				<h2>
+					Контактная информация
+				</h2>
+
+				<br>
+
+				<p>
+					Телефон
+				</p>
+
+				<input class="input" type="tel"/>
+
+				<p>
+					Почта
+				</p>
+
+				<input class="input" type="email"/>
+
+				<p>
+					Скайп
+				</p>
+
+				<input class="input" type="text"/>
+
+				<p>
+					Телеграмм
+				</p>
+
+				<input class="input" type="text"/>
+
+			</div>
+
+		</form>
+		<div class="button-submit" onclick="submitForm()">Ок</div>
+
+	</div>
+	<div class="profile">
+		<div id="description"></div>
+		<div id="info"></div>
+	</div>
+    <div class="buttons-container">
+        <a id="download-button">Скачать</a>
+        <div class="print" onclick="window.print()">Печать</div>
+    </div>
 </div>
 </body>
 </html>
